@@ -2564,6 +2564,14 @@ li {
 #rec1392600911 .timing-doodle--left { transform: rotate(-6deg); }
 #rec1392600911 .timing-doodle--right { transform: rotate(5deg); }
 
+/* На iOS Safari тильдовская анимация использует transform на .t396__elem.
+   Поворот выносим внутрь, чтобы не конфликтовать с translate/scale анимации. */
+#rec1392600911 .timing-doodle--left { transform: none; }
+#rec1392600911 .timing-doodle--right { transform: none; }
+
+#rec1392600911 .timing-doodle--left .tn-atom { transform: rotate(-6deg); }
+#rec1392600911 .timing-doodle--right .tn-atom { transform: rotate(5deg); }
+
 @media screen and (max-width: 479px) {
   #rec1392600911 .timing-doodle {
     width: 64px !important;

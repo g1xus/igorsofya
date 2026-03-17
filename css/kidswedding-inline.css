@@ -2362,10 +2362,18 @@ li {
 }
 
 #rec1392600911 .timing-doodle--left {
-  transform: rotate(-6deg);
+  transform: none;
 }
 
 #rec1392600911 .timing-doodle--right {
+  transform: none;
+}
+
+#rec1392600911 .timing-doodle--left .tn-atom {
+  transform: rotate(-6deg);
+}
+
+#rec1392600911 .timing-doodle--right .tn-atom {
   transform: rotate(5deg);
 }
 
