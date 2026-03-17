@@ -2362,6 +2362,16 @@ li {
 }
 
 #rec1392600911 .timing-doodle--left {
+  transform: rotate(-6deg);
+}
+
+#rec1392600911 .timing-doodle--right {
+  transform: rotate(5deg);
+}
+
+/* На iOS Safari тильдовская анимация использует transform на .t396__elem.
+   Поворот выносим внутрь, чтобы не конфликтовать с translate/scale анимации. */
+#rec1392600911 .timing-doodle--left {
   transform: none;
 }
 
@@ -2377,6 +2387,150 @@ li {
   transform: rotate(5deg);
 }
 
+/* Фикс для iOS Safari: иногда кастомные .tn-elem без тильдовского CSS остаются в потоке.
+   Явно задаём позиционирование для рисованных иконок тайминга по тем же брейкпоинтам, что и T396. */
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000003"],
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000004"],
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000005"],
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000006"],
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000007"] {
+  position: absolute;
+  z-index: 2;
+}
+
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000003"] {
+  top: 168px;
+  left: calc(50% - 600px + 328px);
+  width: 80px;
+  height: 80px;
+}
+
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000004"] {
+  top: 278px;
+  left: calc(50% - 600px + 18px);
+  width: 80px;
+  height: 80px;
+}
+
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000005"] {
+  top: 338px;
+  left: calc(50% - 600px + 328px);
+  width: 80px;
+  height: 80px;
+}
+
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000006"] {
+  top: 508px;
+  left: calc(50% - 600px + 18px);
+  width: 80px;
+  height: 80px;
+}
+
+#rec1392600911 .tn-elem[data-elem-id="1765093498814000007"] {
+  top: 568px;
+  left: calc(50% - 600px + 328px);
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width: 1199px) {
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000003"] {
+    top: 165px;
+    left: calc(50% - 480px + 305px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000004"] {
+    top: 272px;
+    left: calc(50% - 480px + 15px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000005"] {
+    top: 335px;
+    left: calc(50% - 480px + 305px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000006"] {
+    top: 508px;
+    left: calc(50% - 480px + 15px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000007"] {
+    top: 568px;
+    left: calc(50% - 480px + 305px);
+  }
+}
+@media screen and (max-width: 959px) {
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000003"] {
+    top: 165px;
+    left: calc(50% - 320px + 305px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000004"] {
+    top: 272px;
+    left: calc(50% - 320px + 15px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000005"] {
+    top: 335px;
+    left: calc(50% - 320px + 305px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000006"] {
+    top: 508px;
+    left: calc(50% - 320px + 15px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000007"] {
+    top: 568px;
+    left: calc(50% - 320px + 305px);
+  }
+}
+@media screen and (max-width: 639px) {
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000003"] {
+    top: 158px;
+    left: calc(50% - 240px + 288px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000004"] {
+    top: 268px;
+    left: calc(50% - 240px + 12px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000005"] {
+    top: 328px;
+    left: calc(50% - 240px + 288px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000006"] {
+    top: 498px;
+    left: calc(50% - 240px + 12px);
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000007"] {
+    top: 558px;
+    left: calc(50% - 240px + 288px);
+  }
+}
+@media screen and (max-width: 479px) {
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000003"] {
+    top: 158px;
+    left: calc(50% - 160px + 183px);
+    width: 64px;
+    height: 64px;
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000004"] {
+    top: 319px;
+    left: calc(50% - 160px + 78px);
+    width: 64px;
+    height: 64px;
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000005"] {
+    top: 256px;
+    left: calc(50% - 160px + 213px);
+    width: 64px;
+    height: 64px;
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000006"] {
+    top: 428px;
+    left: calc(50% - 160px + 47px);
+    width: 64px;
+    height: 64px;
+  }
+  #rec1392600911 .tn-elem[data-elem-id="1765093498814000007"] {
+    top: 478px;
+    left: calc(50% - 160px + 204px);
+    width: 64px;
+    height: 64px;
+  }
+}
 @media screen and (max-width: 479px) {
   #rec1392600911 .timing-doodle {
     width: 64px !important;
@@ -4115,3 +4269,5 @@ li {
     height: auto;
   }
 }
+
+/*# sourceMappingURL=kidswedding-inline.css.map */
