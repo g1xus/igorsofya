@@ -2342,6 +2342,39 @@ li {
     background-size: cover;
   }
 }
+/* Рисованные картинки этапов в блоке тайминга — побольше, одна слева и одна справа от этапа */
+#rec1392600911 .timing-doodle {
+  z-index: 2;
+  pointer-events: none;
+  width: 80px !important;
+  height: 80px !important;
+}
+#rec1392600911 .timing-doodle .tn-atom {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#rec1392600911 .timing-doodle .tn-atom__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+#rec1392600911 .timing-doodle--left {
+  transform: rotate(-6deg);
+}
+
+#rec1392600911 .timing-doodle--right {
+  transform: rotate(5deg);
+}
+
+@media screen and (max-width: 479px) {
+  #rec1392600911 .timing-doodle {
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
 /* === INLINE STYLE BLOCK 8 === */
 #rec1392696741 .t396__artboard {
   height: 374px;
@@ -4074,5 +4107,3 @@ li {
     height: auto;
   }
 }
-
-/*# sourceMappingURL=kidswedding-inline.css.map */
