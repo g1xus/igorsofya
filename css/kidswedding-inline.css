@@ -2387,6 +2387,36 @@ li {
   transform: rotate(5deg);
 }
 
+/* --- Tilda T396 базовые стили (критично для iOS Safari) ---
+   Если по какой-то причине t396_init/внешние CSS не применились, элементы остаются в потоке
+   и «падают вниз». Эти правила фиксируют базовую механику absolute-раскладки. */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+.t396__artboard {
+  position: relative;
+}
+
+.t396__carrier,
+.t396__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.t396__elem,
+.t396__group {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.t396__elem .tn-atom {
+  transform: translateZ(0);
+}
+
 /* Фикс для iOS Safari: иногда кастомные .tn-elem без тильдовского CSS остаются в потоке.
    Явно задаём позиционирование для рисованных иконок тайминга по тем же брейкпоинтам, что и T396. */
 #rec1392600911 .tn-elem[data-elem-id="1765093498814000003"],
