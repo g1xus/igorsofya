@@ -1573,6 +1573,8 @@ li {
 #rec1432877881 .tn-elem[data-elem-id="1765095393377"] .tn-atom__img {
   border-radius: 0px 0px 0px 0px;
   object-position: center center;
+  min-height: 43px;
+  min-width: 23px;
 }
 
 @media screen and (max-width: 1199px) {
