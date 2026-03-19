@@ -87,12 +87,11 @@ li {
 }
 
 .hero-rings {
-  display: none;
   position: absolute;
-  left: 80px;
-  transform: translateY(10%);
-  width: 58px;
-  height: 44px;
+  left: 226px;
+  transform: translateY(-69%);
+  width: 121px;
+  height: 104px;
   pointer-events: none;
 }
 
