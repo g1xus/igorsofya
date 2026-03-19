@@ -64,16 +64,7 @@ li {
   font-size: 32px;
 }
 
-.hero-names::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: clamp(260px, 70vw, 560px);
-  margin: 26px auto 0;
-  background: #708238;
-  opacity: 0.85;
-  border-radius: 2px;
-}
+
 
 .hero-name-main {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -86,24 +77,24 @@ li {
 .hero-name-groom {
   font-family: 'KalissaRegular', 'Montserrat', Arial, sans-serif;
   font-weight: 400;
-  transform: translateX(-30px);
+  transform: translateX(-28px);
 }
 
 .hero-name-bride {
   font-family: 'KalissaRegular', 'Montserrat', Arial, sans-serif;
   font-weight: 400;
-  transform: translateX(30px);
+  transform: translateX(20px);
 }
 .hero-label {
   transform: none;
-  font-size: 32px;
+  font-size: 40px;
   font-family: 'rukopis', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .hero-name-amp {
   position: absolute;
-  left: 120px;
+  left: 87px;
   transform: translateY(5%);
   font-family: 'KalissaRegular', 'Montserrat', Arial, sans-serif;
   color: #b49a58;
@@ -126,6 +117,17 @@ li {
   object-fit: contain;
 }
 
+
+.hero-date {
+  position: absolute;
+  right: 47px;
+  bottom: -40px;
+  font-family: 'rukopis', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #708238;
+  white-space: nowrap;
+}
 #preloader {
   position: fixed;
   inset: 0;
@@ -638,7 +640,7 @@ li {
 }
 
 #rec1385340331 .tn-elem[data-elem-id="1759501609482"] .tn-atom  {
-  font-size: 48px;
+  font-size: 66px;
     background-size: cover;
 }
 }
