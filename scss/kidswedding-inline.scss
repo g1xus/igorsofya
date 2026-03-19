@@ -48,6 +48,13 @@ li {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'KalissaRegular';
+  src: url('fonts/KalissaRegular_0.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* === GLOBAL CUSTOM STYLES FROM index.html === */
 
 .hero-names {
@@ -77,29 +84,33 @@ li {
 }
 
 .hero-name-groom {
+  font-family: 'KalissaRegular', 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
   transform: translateX(-30px);
 }
 
 .hero-name-bride {
+  font-family: 'KalissaRegular', 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
   transform: translateX(30px);
 }
-
 .hero-label {
   transform: none;
   font-size: 32px;
-  font-family: 'rukopis', 'Montserrat', Arial, sans-serif;
+  font-family: 'rukopis', Arial, sans-serif;
   font-weight: 400;
 }
 
 .hero-name-amp {
   position: absolute;
-  right: 110px;
-  transform: translateY(-80%);
-  font-family: 'rukopis', 'Montserrat', Arial, sans-serif;
+  left: 120px;
+  transform: translateY(5%);
+  font-family: 'KalissaRegular', 'Montserrat', Arial, sans-serif;
   color: #b49a58;
 }
 
 .hero-rings {
+  display: none;
   position: absolute;
   left: 80px;
   transform: translateY(10%);
